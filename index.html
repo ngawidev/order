@@ -112,18 +112,18 @@
 <input class="nama" type="text" placeholder="Tulis Nama Lengkap." />
 </label>
 <label>Alamat :
-<input class="alamat" type="alamat" placeholder="contoh : Jl.Swadaya I RT 003/003 No.1 Kel.Pekayon Kec.Ps Rebo Jak Tim." />
+<input class="alamat" type="alamat" placeholder="Contoh : Jl.Swadaya I RT 003/003 No.1 Kel.Pekayon Kec.Ps Rebo Jak Tim." />
 </label>
 <label>Nomor telepon:
-<input class="nomor" type="nomor" placeholder="contoh : 082225204112.." />
+<input class="nomor" type="nomor" placeholder="Contoh : 081xxxx.." />
 </label>
 <!-- <label>Paket :
 <input class="paket" type="paket" placeholder="contoh : paket hemat" />
 </label> -->
-<label>Jumlah order dan kode produk :
-<textarea class="pesan" placeholder="contoh: 2 pcs, kode produk B7.."></textarea>
+<label>Silahkan Isi Pesan Anda / Kode Produk:
+<textarea class="pesan" placeholder="Contoh: Mau Dong Kak Yang Ini"></textarea>
 </label>
-<a class="submit">KIRIM WHATSAPP >></a>
+<a class="submit">KIRIM WHATSAPP</a>
 
 </div>
 
@@ -182,7 +182,7 @@ function WhatsApp() {
                     nomor = $('#whatsapp .nomor').val(),
 					<!-- paket = $('#whatsapp .paket').val(), -->
 					pesan = $('#whatsapp .pesan').val();
-			$(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=Halo admin saya mau order mohon dibantu cara pemesanannya, saya *' + nama + '* %0A%0AAlamat:%20' + alamat +' %0A%0ANo.tlp:%20'+ nomor +' %0A%0APaket:%20'+ paket +  ' %0A%0AOrder:%20' + pesan + '%0A%0AMohon dibantu total dan cara pembayarannya kak');
+			$(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=Halo admin saya mau order mohon dibantu cara pemesanannya, saya *' + nama + '* %0A%0AAlamat:%20' + alamat +' %0A%0ANo.tlp:%20'+ nomor +' %0A%0AOrder:%20' + pesan + '%0A%0AMohon dibantu total dan cara pembayarannya kak');
 			var w = 960,
 					h = 540,
 					left = Number((screen.width / 2) - (w / 2)),
